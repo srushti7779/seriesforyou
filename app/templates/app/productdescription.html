@@ -1,0 +1,23 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} About Us{% endblock title %}
+
+{% block main-content %}
+
+<div class="row productdescsec">
+    <div class="col-md-6 col-12  proddescimg">
+        
+        <img src="{{product.imagebw1.url}}" alt="" srcset="">
+        <img src="{{product.imageclr2.url}}" alt="" srcset="">
+        <img src="{{product.image3.url}}" alt="" srcset="">
+        <img src="{{product.image4.url}}" alt="" srcset="">
+    </div>
+    <div class="col-md-6 col-12">
+        <p>{{product.typeOfProduct}}</p>
+        <h3>{{product.name}}</h3>
+        <p>{{product.description|linebreaks}}</p>
+           
+    </div>
+</div>
+
+{% endblock main-content %}

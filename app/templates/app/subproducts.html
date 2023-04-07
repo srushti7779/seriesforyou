@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} Products{% endblock title %}
+
+{% block main-content %}
+
+<div class="container subproductdisplay">
+    {% for i in product %}
+
+    <a href="{% url 'productdescription' i.id %}">
+        <figure class="snip1256">
+            <img src="{{i.imagebw1.url}}" class="proimgdiv showimagehidden" alt="" srcset="">
+            <img src="{{i.imageclr2.url}}" class="proimgdiv hiddenimgshow" alt="" srcset="">
+            <figcaption class="text-center">{{i.name}}</figcaption>
+        </figure>        
+    </a>
+    {% endfor %}
+
+{% endblock main-content %}

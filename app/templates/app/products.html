@@ -1,0 +1,55 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Products{% endblock title %}
+
+{% block main-content %}
+
+<div class="row">
+    <div class="col-md-4 col-sm-6 col-12 productmaindiv">
+        <a href="{% url 'subproducts' 'console-table' %}">
+            <img src="{% static 'app/images/9.jpg' %}" class="proimgdiv showimagehidden" alt="" srcset="">
+            <img src="{% static 'app/images/3.jpg' %}" class="proimgdiv hiddenimgshow" alt="" srcset="">
+            <figcaption class="text-center">console - table</figcaption>
+        </a>
+    </div>
+    <div class="col-md-4 col-12 productmaindiv">
+        <a href="{% url 'subproducts' 'bench' %}">
+            <img src="{% static 'app/images/23.jpg' %}" class="proimgdiv showimagehidden" alt="" srcset="">
+            <img src="{% static 'app/images/22.jpg' %}" class="proimgdiv hiddenimgshow" alt="" srcset="">
+            <figcaption class="text-center">bench</figcaption>
+        </a>
+    </div>
+    <div class="col-md-4 col-12 productmaindiv">
+        <a href="{% url 'subproducts' 'dinning-table' %}">
+            <img src="{% static 'app/images/19.jpg' %}" class="proimgdiv showimagehidden" alt="" srcset="">
+            <img src="{% static 'app/images/18.jpg' %}" class="proimgdiv hiddenimgshow" alt="" srcset="">
+            <figcaption class="text-center">dinning - table</figcaption>
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 col-12 productmaindiv">
+        <a href="{% url 'subproducts' 'side-table' %}">
+            <img src="{% static 'app/images/21.jpg' %}" class="proimgdiv showimagehidden" alt="" srcset="">
+            <img src="{% static 'app/images/20.jpg' %}" class="proimgdiv hiddenimgshow" alt="" srcset="">
+            <figcaption class="text-center">side - table</figcaption>
+        </a>
+    </div>
+    <div class="col-md-4 col-12 productmaindiv">
+        <a href="{% url 'subproducts' 'coffee-table' %}">
+            <img src="{% static 'app/images/25.jpg' %}" class="proimgdiv showimagehidden" alt="" srcset="">
+            <img src="{% static 'app/images/24.jpg' %}" class="proimgdiv hiddenimgshow" alt="" srcset="">
+            <figcaption class="text-center">coffee - table</figcaption>
+        </a>
+    </div>
+    <div class="col-md-4 col-12 productmaindiv">
+        <a href="{% url 'subproducts' 'pedestal-light' %}">
+            <img src="{% static 'app/images/17.jpg' %}" class="proimgdiv showimagehidden" alt="" srcset="">
+            <img src="{% static 'app/images/16.jpg' %}" class="proimgdiv hiddenimgshow" alt="" srcset="">
+            <figcaption class="text-center">pedestal - light</figcaption>
+        </a>
+    </div>
+</div>
+
+{% endblock main-content %}
