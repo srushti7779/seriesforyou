@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body, html {
+	margin: 0;
+	padding: 0;
+  	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+.logoimg{
+	width: 100px;
+}
+.nav-item a{
+	color: #E62F4B;
+	letter-spacing: 0.2em;
+}
+
+.nav-item a:hover{
+	color: #E62F4B;
+}
+
+.active1{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.sidelinks{
+	background: #fff;
+	border-right: 1px solid #F7EDEE;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: fixed;
+}
+
+.socialmedia{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.vertical{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -5rem;
+}
+
+.vertical.carousel .carousel-item {
+    overflow: hidden;
+}
+
+.vertical.carousel .carousel-item-next:not(.carousel-item-start),
+.vertical.carousel .active.carousel-item-end {
+    transform: translateY(100%);
+}
+
+.vertical.carousel .carousel-item-prev:not(.carousel-item-end),
+.vertical.carousel .active.carousel-item-start {
+    transform: translateY(-100%);
+}
+
+.vertical.carousel .carousel-indicators {
+    top: 0;
+    left: unset;
+    margin-left: unset !important;
+    margin-right: 1rem;
+    flex-direction: column;
+	cursor: pointer;
+	z-index: 9999999999;
+}
+
+.vertical.carousel .carousel-indicators [data-bs-target] {
+    height: 1px;
+    width: 2px;
+}
+
+.vertical.carousel .carousel-indicators button{
+	background: #E62F4B;
+	margin: 2px;
+}
+
+/* ************* Product Section ************ */
+
+.productsec{
+	height: 50vh;
+}
+
+.productmaindiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-right: 1px solid #F7EDEE;
+	border-bottom: 1px solid #F7EDEE;
+}
+
+.productmaindiv a{
+	text-decoration: none;
+}
+
+.proimgdiv{
+	min-width: 463px;
+	max-width: 463px;
+	max-height: 331px;
+	min-height: 331px;
+}
+
+.hiddenimgshow {
+	display: none;
+}
+.productmaindiv:hover .hiddenimgshow {
+	display: inline;
+}
+
+.productmaindiv:hover .showimagehidden {
+	display: none;
+}
+
+.productmaindiv figcaption{
+	letter-spacing: 0.3em;
+	color: #E62F4B;
+}
+
+.productmaindiv:hover figcaption{
+	font-weight: bold;
+}
+/* ************* SubProduct Section ************ */
+
+.subproductdisplay{
+	display: grid;
+	justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+
+.subproductdisplay a{
+	text-decoration: none;
+}
+
+.subproductdisplay .snip1256 {
+	margin-top: -1rem;
+	border-right: 1px solid #F7EDEE;
+	border-bottom: 1px solid #F7EDEE;
+}
+
+.subproductdisplay figcaption{
+	letter-spacing: 0.3em;
+	color: #E62F4B;
+}
+
+.subproductdisplay:hover figcaption{
+	font-weight: bold;
+}
+.subproductdisplay .snip1256:hover .hiddenimgshow {
+	display: inline;
+}
+
+.subproductdisplay .snip1256:hover .showimagehidden {
+	display: none;
+}
+  
+/* ************* Project Section ************ */
+.projectdisplay{
+	display: grid;
+	justify-content: center;
+    grid-template-columns: auto auto auto;
+	grid-column-gap: 1rem;
+}
+
+/* ************* About Section ************ */
+
+.aboutsec{
+	margin-top: 8rem;
+}
+
+.aboutimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutsec p{
+	margin-left: 4rem;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 31px;
+	text-align: justify;
+	letter-spacing: 0.07em;
+	color: rgba(0, 0, 0, 0.55);
+}
+.aboutimg img{
+	width: 550px;
+	height: 500px;
+}
+
+/* ************* Contact Section ************ */
+
+
+.contactsec{
+	margin-top: 8rem;
+}
+
+.conimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactsec p{
+	margin-left: 3rem;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 27px;
+	text-align: right;
+	letter-spacing: 0.07em;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+.contactsec h3{
+	color: #E62F4B;
+	text-align: right;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+}
+
+.contactsec img{
+	width: 550px;
+	height: 500px;
+}
+
+
+/* *************** Product Description ************ */
+
+.productdescsec{
+	margin-top: 3rem;
+}
+
+.proddescimg{
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-top: -3rem;
+}
+
+.proddescimg img{
+	min-width: 700px;
+	max-width: 700px;
+	min-height: 450px;
+	max-height: 450px;
+}
+
+.productdescsec p{
+	margin-left: 4rem;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: right;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+.productdescsec h3{
+	color: #E62F4B;
+	margin-left: 3rem;
+	text-align: right;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+}
