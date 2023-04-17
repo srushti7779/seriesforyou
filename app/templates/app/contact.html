@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} Contact{% endblock title %}
+
+{% block main-content %}
+
+<div class="row contactsec">
+    
+    <div class="col-md-6 col-12">
+           <h3>ERP Design Studio</h3>
+           <p>Unit B</p>
+           <p>70 – 78 York Way</p>
+           <p>Ahmedabad</p>
+           <p>India</p>
+           <p>Telephone</p>
+           <p>+91 (0)20 7837 2929</p>
+           <p>example@erp.com</p>
+           <p>Applications to join the office are accepted via post or email. We regret that, due to the volume of applications received, we are unable to respond to unsuccessful candidates or return hard copy submissions.</p>
+           <p>cvs@gmail.com</p>
+           
+    </div>
+    <div class="col-md-6 col-12 conimg">
+        <img src="{% static 'app/images/contact.png' %}" alt="" srcset="">
+    </div>
+</div>
+
+
+{% endblock main-content %}

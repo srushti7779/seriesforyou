@@ -1,0 +1,148 @@
+@media(max-width: 768px) {
+    .sidelinks{
+        border-right: none;
+        border-bottom: 1px solid #E62F4B;
+        height: auto;
+        width: 100%;
+    }
+    .vertical{
+        margin-top: 5rem;
+    }
+    .nav-item a{
+        font-size: 0.6rem;
+    }
+    .logoimg{
+        width: 40px;
+    }
+    .socialmedia{
+        flex-direction: column;
+    }
+
+    .productmaindiv{
+        border-right:none
+    }
+    
+    .aboutsec,.productdescsec, .contactsec{
+        padding: 1rem;
+    }
+
+    .productsec{
+        height: auto;
+    }
+    
+    .productdescsec{
+        margin-top: 4rem;
+    }
+
+    .proddescimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    .productdescsec p{
+        margin-left: 0;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .productdescsec h3{
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    .subproductdisplay, .projectdisplay{
+        grid-template-columns: auto;
+    }
+    
+    .aboutsec p, .contactsec p{
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+    .sidelinks, .navnavlink{
+        display: flex!important;
+        flex-direction: row!important;
+    }
+    .sidecontentdiv{
+        width: 100%;
+    }
+    .logoimg{
+        width: 60px;
+    }
+
+    .socialmedia{
+        flex-direction: row;
+    }
+    .nav-item a{
+        font-size: 1rem;
+    }
+    .proimgdiv{
+        min-width: 320px;
+        max-width: 320px;
+        max-height: 270px;
+        min-height: 270px;
+    }
+    .aboutimg img, .contactsec img{
+        width: 350px;
+        height: 400px;
+    }
+    .aboutsec,.productdescsec, .contactsec{
+        padding: 1rem;
+    }
+    .productdescsec{
+        padding-left: 3rem;
+        margin-top: 5rem;
+    }
+
+    .proddescimg img{
+        min-width: 600px;
+        max-width: 600px;
+        min-height: 400px;
+        max-height: 400px;
+    }
+    .subproductdisplay, .projectdisplay{
+        grid-template-columns: auto auto;
+        margin-top: 6rem;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1366px)  {
+
+    .sidelinks, .navnavlink{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .sidecontentdiv{
+        width: 90%;
+    }
+
+    .proimgdiv{
+        min-width: 300px;
+        max-width: 300px;
+        max-height: 270px;
+        min-height: 270px;
+    }
+    .aboutimg img, .contactsec img{
+        width: 400px;
+        height: 450px;
+    }
+    .aboutsec p{
+        margin-left: 3rem;
+    }
+    .productdescsec{
+        padding-left: 1rem;
+    }
+    .subproductdisplay, .projectdisplay{
+        grid-template-columns: auto auto auto;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+}
